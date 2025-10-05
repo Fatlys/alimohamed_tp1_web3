@@ -4,25 +4,49 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Critique approfondie de Vagabond</title>
+
+  <!-- Bootstrap CSS 5.3.8 -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+  <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+
+  <!-- CSS -->
   <link rel="stylesheet" href="style.css">
 </head>
-<body style="font-family: 'Poppins', sans-serif; "bg-light">
+<body>
 
-  <!-- 🏯 En-tête -->
-  <header class="text-center text-white py-5 position-relative"
-          style="background-image: url('images/IMAGE_3.jpg'); background-size: contain; background-repeat: no-repeat; background-position: center; height: 60vh; display: flex; align-items: center; justify-content: center; background-color: #003049;">
-    <div class="bg-overlay-light py-5 px-3">
-      <p class="text-uppercase text-dark fw-bold fs-1" style="font-weight:900;">CRITIQUE APPROFONDIE DE VAGABOND</p>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark" style="background-color:#003049;">
+    <div class="container">
+      <a class="navbar-brand" href="#">MangaCritique</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" href="#">Accueil</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Mangas</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Header -->
+  <header>
+    <div class="header-overlay">
+      <h1>CRITIQUE APPROFONDIE DE VAGABOND</h1>
     </div>
   </header>
 
-  <!-- 📰 Contenu principal -->
+  <!-- Contenu principal -->
   <main class="container my-5">
     <div class="row g-4">
-
-      <!-- 🧭 Colonne 1 -->
+      <!-- Colonne 1 -->
       <div class="col-lg-4">
         <img src="images/IMAGE_2.jpg" class="img-fluid rounded shadow mb-3" alt="Vagabond image 1">
         <p>
@@ -31,9 +55,12 @@
         <p>
           Le dessin est d’une beauté saisissante. Chaque planche semble gravée à l’encre et au souffle, rendant hommage à la discipline et à la solitude du guerrier. Les combats, d’une intensité rare, allient réalisme brutal et élégance graphique. 
         </p>
+        <button type="button" class="btn btn-primary mt-2" data-bs-toggle="modal" data-bs-target="#modalVagabond">
+          <i class="bi bi-book"></i> Lire plus
+        </button>
       </div>
 
-      <!-- 🧭 Colonne 2 -->
+      <!-- Colonne 2 -->
       <div class="col-lg-5">
         <p>
           Ce manga se distingue par sa profondeur psychologique. Musashi n’est pas un héros parfait, mais un homme brisé en quête d’équilibre. À travers ses errances, Inoue interroge la notion même de force : est-elle physique, mentale ou spirituelle ?
@@ -44,19 +71,21 @@
         <img src="images/IMAGE_1.png" class="img-fluid rounded shadow mt-3" alt="Vagabond image 2">
       </div>
 
-      <!-- 🎴 Colonne 3 (Articles similaires) -->
+      <!-- Colonne 3 (Articles similaires en cards) -->
       <aside class="col-lg-3">
-        <div class="p-3 border rounded shadow-sm bg-light">
-          <h5 class="fw-bold text-center mb-4 text-dark">📰 Articles similaires</h5>
+        <h5 class="fw-bold text-center mb-4 text-dark"><i class="bi bi-newspaper"></i> Articles similaires</h5>
 
-          <div class="mb-4">
-            <img src="images/IMAGE_5.png" alt="Berserk" class="img-fluid rounded shadow-sm mb-2" style="height: 160px; object-fit: cover; width: 100%;">
+        <div class="card mb-3">
+          <img src="images/IMAGE_5.png" class="card-img-top" alt="Berserk">
+          <div class="card-body">
             <a href="berserk.html" class="text-decoration-none text-dark fw-bold d-block mb-1">Berserk : La rage et la destinée</a>
             <small class="text-muted">Une plongée dans la noirceur de l’âme humaine</small>
           </div>
+        </div>
 
-          <div>
-            <img src="images/IMAGE_6.jpg" alt="SNK" class="img-fluid rounded shadow-sm mb-2" style="height: 160px; object-fit: cover; width: 100%;">
+        <div class="card mb-3">
+          <img src="images/IMAGE_6.jpg" class="card-img-top" alt="SNK">
+          <div class="card-body">
             <a href="snk.html" class="text-decoration-none text-dark fw-bold d-block mb-1">Attack on Titan : L’humanité face au mur</a>
             <small class="text-muted">Un combat entre liberté et peur</small>
           </div>
@@ -66,7 +95,7 @@
     </div>
   </main>
 
-  <!-- 💬 Conclusion -->
+  <!-- Conclusion -->
   <section class="text-center py-5 bg-light">
     <div class="container">
       <p>
@@ -76,20 +105,34 @@
     </div>
   </section>
 
-  <!-- 🖼️ Image de bas de page -->
+  <!-- Footer image -->
   <div class="footer-img">
     <img src="images/IMAGE_4.jpg" alt="Vagabond final" class="img-fluid w-100">
   </div>
 
-  <!-- 📜 Pied de page -->
-  <footer class="text-center py-3 text-white" style="background-color: #003049;">
+  <!-- Footer -->
+  <footer class="text-center py-3 text-white" style="background-color:#003049;">
     <small>2024 © Spires d'une critique manga</small>
   </footer>
 
-  <!-- ✅ Script Bootstrap -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" 
-          integrity="sha384-sA83vT6k3uF8i1kUmFmMM2CuK7XZhDtbBLg7K9M6P2T3W2LZVMEglU/83Il5O1xj" 
-          crossorigin="anonymous"></script>
+  <!-- Modal Bootstrap -->
+  <div class="modal fade" id="modalVagabond" tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalLabel">Détails sur Vagabond</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img src="images/IMAGE_2.jpg" alt="Vagabond" class="mb-3">
+          <p>Ce manga explore la vie de Musashi, sa quête de sens et ses combats avec une intensité rare. Une œuvre riche et profonde qui marque chaque lecteur.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS 5.3.8 -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-sA83vT6k3uF8i1kUmFmMM2CuK7XZhDtbBLg7K9M6P2T3W2LZVMEglU/83Il5O1xj" crossorigin="anonymous"></script>
   <script src="scripts.js"></script>
 </body>
 </html>
